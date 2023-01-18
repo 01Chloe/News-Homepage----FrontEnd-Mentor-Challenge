@@ -140,6 +140,12 @@ header nav .nav-links .close-menu-icon {
   color: hsl(236deg, 13%, 42%);
 }
 
+.attribution {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1150px) {
   body {
     padding: 50px 70px;
