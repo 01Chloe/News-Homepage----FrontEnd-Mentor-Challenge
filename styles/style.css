@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px 130px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+header nav .nav-links a {
+  color: hsl(236deg, 13%, 42%);
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.2s ease-out;
+}
+header nav .nav-links a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+header nav .nav-links .menu-icon {
+  display: none;
+}
+header nav .nav-links .close-menu-icon {
+  display: none;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.section-one .block-left {
+  width: 67%;
+}
+.section-one .block-left img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.section-one .block-left .img-mobil {
+  display: none;
+}
+.section-one .block-left .block-left-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.section-one .block-left .block-left-bottom h1 {
+  color: hsl(240deg, 100%, 5%);
+  font-weight: 800;
+  font-size: 50px;
+}
+.section-one .block-left .block-left-bottom .block-left-side-right {
+  margin-left: 20px;
+}
+.section-one .block-left .block-left-bottom .block-left-side-right p {
+  color: hsl(236deg, 13%, 42%);
+}
+.section-one .block-left .block-left-bottom .block-left-side-right button {
+  background: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  border: none;
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding: 20px 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+}
+.section-one .block-left .block-left-bottom .block-left-side-right button:hover {
+  background: hsl(240deg, 100%, 5%);
+}
+.section-one .block-right {
+  width: 30%;
+  background: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+  padding: 40px 20px;
+}
+.section-one .block-right h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 30px;
+  font-weight: 800;
+}
+.section-one .block-right .side {
+  margin: 30px 0;
+}
+.section-one .block-right .side h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+.section-one .block-right .side h3:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+.section-one .block-right .side p {
+  font-size: 14px;
+  color: hsl(233deg, 8%, 79%);
+}
+
+.section-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-two .block {
+  display: flex;
+  flex-direction: row;
+}
+.section-two .block img {
+  width: 30%;
+  margin-right: 15px;
+}
+.section-two .block h2 {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 30px;
+}
+.section-two .block h3 {
+  color: hsl(240deg, 100%, 5%);
+  margin: 15px 0;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+.section-two .block h3:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.section-two .block p {
+  color: hsl(236deg, 13%, 42%);
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    padding: 50px 70px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header nav .nav-links {
+    transition: all 0.3s ease-in;
+  }
+  header nav .nav-links .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  header nav .nav-links a {
+    display: none;
+  }
+  header nav .nav-links.openMenu {
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: hsl(36deg, 100%, 99%);
+    width: 300px;
+    height: 330vh;
+    padding: 50px 70px 30px 50px;
+    border-left: 1px solid hsl(240deg, 100%, 5%);
+    border-bottom: 1px solid hsl(240deg, 100%, 5%);
+  }
+  header nav .nav-links.openMenu .menu-icon {
+    display: none;
+  }
+  header nav .nav-links.openMenu .close-menu-icon {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  header nav .nav-links.openMenu a {
+    display: block;
+    margin: 30px 0;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .section-one {
+    flex-direction: column;
+  }
+  .section-one .block-left {
+    width: 100%;
+  }
+  .section-one .block-left img {
+    display: none;
+  }
+  .section-one .block-left .img-mobil {
+    display: block;
+  }
+  .section-one .block-left .block-left-bottom {
+    flex-direction: column;
+  }
+  .section-one .block-left .block-left-bottom h1 {
+    margin-bottom: 30px;
+  }
+  .section-one .block-left .block-left-bottom .block-left-side-right {
+    margin: 0;
+  }
+  .section-one .block-left .block-left-bottom .block-left-side-right button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .section-one .block-right {
+    width: 100%;
+  }
+  .section-two {
+    flex-direction: column;
+  }
+  .section-two .block {
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  body {
+    padding: 50px 30px;
+  }
+  header nav .nav-links.openMenu {
+    width: 150px;
+    padding: 50px 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
